@@ -1,27 +1,20 @@
-# 🧠 SVM Classifier - Heart Disease Prediction
+# 🧠 SVM Classifier for Heart Disease Prediction
 
-This project implements a Support Vector Machine (SVM) classifier to predict the presence of heart disease using the popular `heart.csv` dataset. It includes modular Python files for data loading, preprocessing, training, evaluation, and visualization.
-
----
-
-## 📊 Dataset
-
-We use the [Heart Disease UCI dataset](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction) which contains key health metrics like age, sex, cholesterol, resting blood pressure, etc., to predict a binary target: `0` (no disease) or `1` (disease).
+This project uses a **Support Vector Machine (SVM)** classifier to predict heart disease based on clinical features. The goal is to demonstrate the complete ML pipeline: data loading, preprocessing, model training, evaluation, and visualization.
 
 ---
 
-## 🧰 Project Structure
+## 📂 Project Structure
 
 svm_classifier_project/
-│
 ├── data_loader.py # Load and explore dataset
 ├── preprocess.py # Clean and prepare data
-├── train_svm.py # Train the SVM classifier
-├── evaluate_model.py # Evaluate using metrics
-├── visualize.py # Plot confusion matrix, ROC curve, etc.
-├── main.py # Main execution script
+├── train_svm.py # Train the SVM model
+├── evaluate_model.py # Evaluate model performance
+├── visualize.py # Visualize results
+├── main.py # Main script to run the pipeline
 ├── heart.csv # Dataset file
-└── README.md # Project overview
+└── README.md # Project documentation
 
 yaml
 Copy
@@ -29,48 +22,74 @@ Edit
 
 ---
 
-## 🔧 Installation
+## 📊 Dataset
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/svm-classifier.git
-   cd svm-classifier
-Install dependencies:
+- **Source:** [Heart Failure Prediction Dataset (Kaggle)](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)
+- **Description:** The dataset includes demographic and clinical attributes of patients and whether or not they had a heart disease event.
 
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/svm-classifier.git
+cd svm-classifier
+2. Install Dependencies
 bash
 Copy
 Edit
 pip install -r requirements.txt
-Run the project:
-
+3. Run the Classifier
 bash
 Copy
 Edit
 python main.py
-🧪 Features
-Cleaned and normalized dataset
+📈 Model Evaluation
+The model is evaluated using the following metrics:
 
-Train/test split with stratification
+Accuracy
 
-SVM classifier with hyperparameter tuning
+Precision
 
-Accuracy, precision, recall, F1-score, ROC-AUC
+Recall
 
-Visualizations: Confusion Matrix, ROC Curve
+F1-score
 
-📉 Evaluation Metrics
+ROC-AUC Score
+
+Visualizations include:
+
+✅ Confusion Matrix
+
+📉 ROC Curve
+
+🔍 Classification Report
+
+🧪 Sample Output (Replace with actual)
 Metric	Value
-Accuracy	~XX%
-Precision	~XX%
-Recall	~XX%
-F1-Score	~XX%
-ROC AUC	~XX
+Accuracy	87.3%
+Precision	84.6%
+Recall	88.1%
+F1-Score	86.3%
+ROC AUC	90.2%
 
-(Replace XX% with actual model results after training.)
+🛠️ Tools and Libraries
+Python 3.x
 
-📌 TODO
-Add GUI or web interface (e.g., Streamlit)
+NumPy
 
-Compare with other classifiers (Random Forest, KNN)
+Pandas
 
-Deploy model for real-time inference
+Scikit-learn
+
+Matplotlib
+
+Seaborn
+
+📌 Future Enhancements
+🔁 Compare with other ML models (Random Forest, Logistic Regression)
+
+🌐 Deploy using Streamlit or Flask
+
+🧠 Add hyperparameter tuning and cross-validation
